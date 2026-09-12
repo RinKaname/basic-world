@@ -164,5 +164,15 @@ def run_game(mode="player"):
 
 if __name__ == "__main__":
     import sys
-    mode = "player" if len(sys.argv) == 1 else sys.argv[1]
+
+    if len(sys.argv) > 1:
+        mode = sys.argv[1]
+    else:
+        print("Select game mode:")
+        print("1. Player Co-Op (You + AI Agent)")
+        print("2. Agent Only (2 AI Agents)")
+        choice = input("Enter 1 or 2: ").strip()
+
+        mode = "player" if choice == "1" else "agent"
+
     run_game(mode)
