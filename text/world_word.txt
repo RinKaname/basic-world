@@ -1,0 +1,387 @@
+I Hunt Deer.
+You Hunt Deer.
+We Hunt Deer.
+They Hunt Deer.
+He Hunt Deer.
+She Hunt Deer.
+It Hunt Deer.
+I Love Meat.
+I Love Cow Meat.
+I Cook Deer Meat.
+I Cook Cow Meat.
+You Love Meat.
+You Love Cow Meat.
+You Cook Deer Meat.
+You Cook Cow Meat.
+We Love Meat.
+We Love Cow Meat.
+We Cook Deer Meat.
+We Cook Cow Meat.
+They Love Meat.
+They Love Cow Meat.
+They Cook Deer Meat.
+They Cook Cow Meat.
+He Love Meat.
+He Love Cow Meat.
+He Cook Deer Meat.
+He Cook Cow Meat.
+She Love Meat.
+She Love Cow Meat.
+She Cook Deer Meat.
+She Cook Cow Meat.
+It Love Meat.
+It Love Cow Meat.
+It Cook Deer Meat.
+It Cook Cow Meat.
+Good Meat.
+Bad Meat.
+I Take Apple Fruit.
+I Take Banana Fruit.
+I Take Grape Fruit.
+I Take Papaya Fruit.
+I Take Orange Fruit.
+You Take Apple Fruit.
+You Take Banana Fruit.
+You Take Grape Fruit.
+You Take Papaya Fruit.
+You Take Orange Fruit.
+We Take Apple Fruit.
+We Take Banana Fruit.
+We Take Grape Fruit.
+We Take Papaya Fruit.
+We Take Orange Fruit.
+They Take Apple Fruit.
+They Take Banana Fruit.
+They Take Grape Fruit.
+They Take Papaya Fruit.
+They Take Orange Fruit.
+He Take Apple Fruit.
+He Take Banana Fruit.
+He Take Grape Fruit.
+He Take Papaya Fruit.
+He Take Orange Fruit.
+She Take Apple Fruit.
+She Take Banana Fruit.
+She Take Grape Fruit.
+She Take Papaya Fruit.
+She Take Orange Fruit.
+It Take Apple Fruit.
+It Take Banana Fruit.
+It Take Grape Fruit.
+It Take Papaya Fruit.
+It Take Orange Fruit.
+My Apple Fruit.
+My Banana Fruit.
+My Grape Fruit.
+My Papaya Fruit.
+My Orange Fruit.
+Your Apple Fruit.
+Your Banana Fruit.
+Your Grape Fruit.
+Your Papaya Fruit.
+Your Orange Fruit.
+Our Apple Fruit.
+Our Banana Fruit.
+Our Grape Fruit.
+Our Papaya Fruit.
+Our Orange Fruit.
+Their Apple Fruit.
+Their Banana Fruit.
+Their Grape Fruit.
+Their Papaya Fruit.
+Their Orange Fruit.
+His Apple Fruit.
+His Banana Fruit.
+His Grape Fruit.
+His Papaya Fruit.
+His Orange Fruit.
+Her Apple Fruit.
+Her Banana Fruit.
+Her Grape Fruit.
+Her Papaya Fruit.
+Her Orange Fruit.
+Its Apple Fruit.
+Its Banana Fruit.
+Its Grape Fruit.
+Its Papaya Fruit.
+Its Orange Fruit.
+I Run.
+You Run.
+We Run.
+They Run.
+He Run.
+She Run.
+It Run.
+I Eat.
+I Drink.
+I Sleep.
+I Walk.
+I Stop.
+I See.
+I Hear.
+You Eat.
+You Drink.
+You Sleep.
+You Walk.
+You Stop.
+You See.
+You Hear.
+We Eat.
+We Drink.
+We Sleep.
+We Walk.
+We Stop.
+We See.
+We Hear.
+They Eat.
+They Drink.
+They Sleep.
+They Walk.
+They Stop.
+They See.
+They Hear.
+He Eat.
+He Drink.
+He Sleep.
+He Walk.
+He Stop.
+He See.
+He Hear.
+She Eat.
+She Drink.
+She Sleep.
+She Walk.
+She Stop.
+She See.
+She Hear.
+It Eat.
+It Drink.
+It Sleep.
+It Walk.
+It Stop.
+It See.
+It Hear.
+I See Tree.
+I See Water.
+I See Rock.
+I See Fire.
+I See Grass.
+I See Day.
+I See Night.
+I See Sun.
+I See Moon.
+You See Tree.
+You See Water.
+You See Rock.
+You See Fire.
+You See Grass.
+You See Day.
+You See Night.
+You See Sun.
+You See Moon.
+We See Tree.
+We See Water.
+We See Rock.
+We See Fire.
+We See Grass.
+We See Day.
+We See Night.
+We See Sun.
+We See Moon.
+They See Tree.
+They See Water.
+They See Rock.
+They See Fire.
+They See Grass.
+They See Day.
+They See Night.
+They See Sun.
+They See Moon.
+He See Tree.
+He See Water.
+He See Rock.
+He See Fire.
+He See Grass.
+He See Day.
+He See Night.
+He See Sun.
+He See Moon.
+She See Tree.
+She See Water.
+She See Rock.
+She See Fire.
+She See Grass.
+She See Day.
+She See Night.
+She See Sun.
+She See Moon.
+It See Tree.
+It See Water.
+It See Rock.
+It See Fire.
+It See Grass.
+It See Day.
+It See Night.
+It See Sun.
+It See Moon.
+I Am Hungry.
+I Am Thirsty.
+I Am Tired.
+I Am Happy.
+I Am Sad.
+I Am Angry.
+You Are Hungry.
+You Are Thirsty.
+You Are Tired.
+You Are Happy.
+You Are Sad.
+You Are Angry.
+We Are Hungry.
+We Are Thirsty.
+We Are Tired.
+We Are Happy.
+We Are Sad.
+We Are Angry.
+They Are Hungry.
+They Are Thirsty.
+They Are Tired.
+They Are Happy.
+They Are Sad.
+They Are Angry.
+He Is Hungry.
+He Is Thirsty.
+He Is Tired.
+He Is Happy.
+He Is Sad.
+He Is Angry.
+She Is Hungry.
+She Is Thirsty.
+She Is Tired.
+She Is Happy.
+She Is Sad.
+She Is Angry.
+It Is Hungry.
+It Is Thirsty.
+It Is Tired.
+It Is Happy.
+It Is Sad.
+It Is Angry.
+I Attack.
+I Defend.
+I Hide.
+I Hurt.
+You Attack.
+You Defend.
+You Hide.
+You Hurt.
+We Attack.
+We Defend.
+We Hide.
+We Hurt.
+They Attack.
+They Defend.
+They Hide.
+They Hurt.
+He Attack.
+He Defend.
+He Hide.
+He Hurt.
+She Attack.
+She Defend.
+She Hide.
+She Hurt.
+It Attack.
+It Defend.
+It Hide.
+It Hurt.
+I Carry Bag.
+I Carry Apple Fruit.
+I Carry Banana Fruit.
+I Carry Grape Fruit.
+I Carry Papaya Fruit.
+I Carry Orange Fruit.
+You Carry Bag.
+You Carry Apple Fruit.
+You Carry Banana Fruit.
+You Carry Grape Fruit.
+You Carry Papaya Fruit.
+You Carry Orange Fruit.
+We Carry Bag.
+We Carry Apple Fruit.
+We Carry Banana Fruit.
+We Carry Grape Fruit.
+We Carry Papaya Fruit.
+We Carry Orange Fruit.
+They Carry Bag.
+They Carry Apple Fruit.
+They Carry Banana Fruit.
+They Carry Grape Fruit.
+They Carry Papaya Fruit.
+They Carry Orange Fruit.
+He Carry Bag.
+He Carry Apple Fruit.
+He Carry Banana Fruit.
+He Carry Grape Fruit.
+He Carry Papaya Fruit.
+He Carry Orange Fruit.
+She Carry Bag.
+She Carry Apple Fruit.
+She Carry Banana Fruit.
+She Carry Grape Fruit.
+She Carry Papaya Fruit.
+She Carry Orange Fruit.
+It Carry Bag.
+It Carry Apple Fruit.
+It Carry Banana Fruit.
+It Carry Grape Fruit.
+It Carry Papaya Fruit.
+It Carry Orange Fruit.
+My Bag.
+Your Bag.
+Our Bag.
+Their Bag.
+His Bag.
+Her Bag.
+Its Bag.
+I Walk Forest.
+I See Forest.
+I Walk River.
+I See River.
+I Walk Camp.
+I See Camp.
+You Walk Forest.
+You See Forest.
+You Walk River.
+You See River.
+You Walk Camp.
+You See Camp.
+We Walk Forest.
+We See Forest.
+We Walk River.
+We See River.
+We Walk Camp.
+We See Camp.
+They Walk Forest.
+They See Forest.
+They Walk River.
+They See River.
+They Walk Camp.
+They See Camp.
+He Walk Forest.
+He See Forest.
+He Walk River.
+He See River.
+He Walk Camp.
+He See Camp.
+She Walk Forest.
+She See Forest.
+She Walk River.
+She See River.
+She Walk Camp.
+She See Camp.
+It Walk Forest.
+It See Forest.
+It Walk River.
+It See River.
+It Walk Camp.
+It See Camp.
