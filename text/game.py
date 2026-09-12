@@ -1,4 +1,12 @@
 import random
+import torch
+import sys
+import os
+
+# Add parent directory to path so we can import model and tokenizer
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from tokenizer import BasicWordTokenizer
+from model import AmadeusRNN
 
 class Entity:
     def __init__(self, name, is_player=False):
@@ -108,6 +116,30 @@ class World:
         return "Bad Action."
 
 def run_game(mode="player"):
+    # Load Model and Tokenizer
+    print("Loading AI Model...")
+    DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
+    tokenizer = BasicWordTokenizer()
+    # Note: Using relative path from root if run from root, or adjust if run from text/
+    import os
+    if os.path.exists("text/world_word.txt"):
+        vocab_path = "text/world_word.txt"
+        model_path = "basic_world_model.safetensors"
+    else:
+        vocab_path = "world_word.txt"
+        model_path = "../basic_world_model.safetensors"
+
+    tokenizer.build_vocab(vocab_path)
+    model = AmadeusRNN(vocab_size=tokenizer.vocab_size, hidden_dim=64).to(DEVICE)
+
+    from safetensors.torch import load_file
+    try:
+        model.load_state_dict(load_file(model_path))
+        print("Model loaded successfully.")
+    except Exception as e:
+        print(f"Could not load model: {e}. Falling back to random bot.")
+        model = None
+
     world = World()
 
     if mode == "player":
@@ -140,16 +172,38 @@ def run_game(mode="player"):
                 action = input(f"Action for {entity.name}: ")
                 if action.lower() == "stop": return
             else:
-                # Basic Bot AI - pick random valid action based on state
-                possible_actions = [f"{entity.name} Walk Forest", f"{entity.name} Walk River", f"{entity.name} Walk Camp"]
-                if entity.location == "Forest":
-                    possible_actions.extend([f"{entity.name} Take Apple", f"{entity.name} Hunt Deer"])
-                if entity.location == "River":
-                    possible_actions.append(f"{entity.name} Drink Water")
-                if entity.bag:
-                    possible_actions.append(f"{entity.name} Eat {entity.bag[0]}")
+                if model is not None:
+                    # Let the SLM decide based on current state (prompt)
+                    prompt = entity.get_status() + f" {entity.name}"
+                    encoded = tokenizer.encode(prompt)
+                    input_tensor = torch.tensor(encoded, dtype=torch.long, device=DEVICE).unsqueeze(0)
 
-                action = random.choice(possible_actions)
+                    with torch.no_grad():
+                        # Generate 3 words (Verb + Target/Noun)
+                        gen_tokens = model.generate(input_tensor, max_new_tokens=2, temperature=0.8)
+
+                    # Decode only the newly generated tokens
+                    generated_ids = gen_tokens[0].cpu().numpy().tolist()[len(encoded):]
+                    generated_words = [tokenizer.id2word.get(tid, "") for tid in generated_ids if tid != 0]
+
+                    action = f"{entity.name} " + " ".join(generated_words).capitalize()
+
+                    # Sanity check: fallback if model hallucinated un-parsable garbage
+                    words = action.lower().replace(".", "").split()
+                    if len(words) < 2 or words[1] not in ["walk", "take", "eat", "drink", "hunt", "sleep"]:
+                         action = f"{entity.name} Walk {random.choice(['Forest', 'River', 'Camp'])}"
+                else:
+                    # Basic Random fallback AI
+                    possible_actions = [f"{entity.name} Walk Forest", f"{entity.name} Walk River", f"{entity.name} Walk Camp"]
+                    if entity.location == "Forest":
+                        possible_actions.extend([f"{entity.name} Take Apple", f"{entity.name} Hunt Deer"])
+                    if entity.location == "River":
+                        possible_actions.append(f"{entity.name} Drink Water")
+                    if entity.bag:
+                        possible_actions.append(f"{entity.name} Eat {entity.bag[0]}")
+
+                    action = random.choice(possible_actions)
+
                 print(f"Agent {entity.name} chooses: {action}")
 
             result = world.parse_action(entity, action)
