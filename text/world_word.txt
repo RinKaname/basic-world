@@ -440,3 +440,219 @@ He Eat Cooked Meat.
 She Eat Cooked Meat.
 We Eat Cooked Meat.
 They Eat Cooked Meat.
+I Is Thirsty. I Walk River. I Drink Water.
+I Am Thirsty. I Walk River. I Drink Water.
+I Is Hungry. I Eat Cooked Meat.
+I Am Hungry. I Eat Cooked Meat.
+I Is Hungry. I Eat Apple.
+I Am Hungry. I Eat Apple.
+I Is Hurt. I Sleep.
+I Am Hurt. I Sleep.
+I Take Rock. I Take Wood. I Craft Axe.
+I Craft Axe. I Walk Forest. I Chop Wood.
+I Hunt Deer. I Take Deer Meat. I Walk Camp. I Cook Meat. I Eat Cooked Meat.
+I See Fire. I Cook Meat.
+You Is Thirsty. You Walk River. You Drink Water.
+You Are Thirsty. You Walk River. You Drink Water.
+You Is Hungry. You Eat Cooked Meat.
+You Are Hungry. You Eat Cooked Meat.
+You Is Hungry. You Eat Apple.
+You Are Hungry. You Eat Apple.
+You Is Hurt. You Sleep.
+You Are Hurt. You Sleep.
+You Take Rock. You Take Wood. You Craft Axe.
+You Craft Axe. You Walk Forest. You Chop Wood.
+You Hunt Deer. You Take Deer Meat. You Walk Camp. You Cook Meat. You Eat Cooked Meat.
+You See Fire. You Cook Meat.
+We Is Thirsty. We Walk River. We Drink Water.
+We Are Thirsty. We Walk River. We Drink Water.
+We Is Hungry. We Eat Cooked Meat.
+We Are Hungry. We Eat Cooked Meat.
+We Is Hungry. We Eat Apple.
+We Are Hungry. We Eat Apple.
+We Is Hurt. We Sleep.
+We Are Hurt. We Sleep.
+We Take Rock. We Take Wood. We Craft Axe.
+We Craft Axe. We Walk Forest. We Chop Wood.
+We Hunt Deer. We Take Deer Meat. We Walk Camp. We Cook Meat. We Eat Cooked Meat.
+We See Fire. We Cook Meat.
+They Is Thirsty. They Walk River. They Drink Water.
+They Are Thirsty. They Walk River. They Drink Water.
+They Is Hungry. They Eat Cooked Meat.
+They Are Hungry. They Eat Cooked Meat.
+They Is Hungry. They Eat Apple.
+They Are Hungry. They Eat Apple.
+They Is Hurt. They Sleep.
+They Are Hurt. They Sleep.
+They Take Rock. They Take Wood. They Craft Axe.
+They Craft Axe. They Walk Forest. They Chop Wood.
+They Hunt Deer. They Take Deer Meat. They Walk Camp. They Cook Meat. They Eat Cooked Meat.
+They See Fire. They Cook Meat.
+He Is Thirsty. He Walk River. He Drink Water.
+He Is Hungry. He Eat Cooked Meat.
+He Is Hungry. He Eat Apple.
+He Is Hurt. He Sleep.
+He Take Rock. He Take Wood. He Craft Axe.
+He Craft Axe. He Walk Forest. He Chop Wood.
+He Hunt Deer. He Take Deer Meat. He Walk Camp. He Cook Meat. He Eat Cooked Meat.
+He See Fire. He Cook Meat.
+She Is Thirsty. She Walk River. She Drink Water.
+She Is Hungry. She Eat Cooked Meat.
+She Is Hungry. She Eat Apple.
+She Is Hurt. She Sleep.
+She Take Rock. She Take Wood. She Craft Axe.
+She Craft Axe. She Walk Forest. She Chop Wood.
+She Hunt Deer. She Take Deer Meat. She Walk Camp. She Cook Meat. She Eat Cooked Meat.
+She See Fire. She Cook Meat.
+It Is Thirsty. It Walk River. It Drink Water.
+It Is Hungry. It Eat Cooked Meat.
+It Is Hungry. It Eat Apple.
+It Is Hurt. It Sleep.
+It Take Rock. It Take Wood. It Craft Axe.
+It Craft Axe. It Walk Forest. It Chop Wood.
+It Hunt Deer. It Take Deer Meat. It Walk Camp. It Cook Meat. It Eat Cooked Meat.
+It See Fire. It Cook Meat.
+I Is Thirsty. I Walk River. I Drink Water.
+I Am Thirsty. I Walk River. I Drink Water.
+I Is Hungry. I Eat Cooked Meat.
+I Am Hungry. I Eat Cooked Meat.
+I Is Hungry. I Eat Apple.
+I Am Hungry. I Eat Apple.
+I Is Hurt. I Sleep.
+I Am Hurt. I Sleep.
+I Take Rock. I Take Wood. I Craft Axe.
+I Craft Axe. I Walk Forest. I Chop Wood.
+I Hunt Deer. I Take Deer Meat. I Walk Camp. I Cook Meat. I Eat Cooked Meat.
+I See Fire. I Cook Meat.
+You Is Thirsty. You Walk River. You Drink Water.
+You Are Thirsty. You Walk River. You Drink Water.
+You Is Hungry. You Eat Cooked Meat.
+You Are Hungry. You Eat Cooked Meat.
+You Is Hungry. You Eat Apple.
+You Are Hungry. You Eat Apple.
+You Is Hurt. You Sleep.
+You Are Hurt. You Sleep.
+You Take Rock. You Take Wood. You Craft Axe.
+You Craft Axe. You Walk Forest. You Chop Wood.
+You Hunt Deer. You Take Deer Meat. You Walk Camp. You Cook Meat. You Eat Cooked Meat.
+You See Fire. You Cook Meat.
+We Is Thirsty. We Walk River. We Drink Water.
+We Are Thirsty. We Walk River. We Drink Water.
+We Is Hungry. We Eat Cooked Meat.
+We Are Hungry. We Eat Cooked Meat.
+We Is Hungry. We Eat Apple.
+We Are Hungry. We Eat Apple.
+We Is Hurt. We Sleep.
+We Are Hurt. We Sleep.
+We Take Rock. We Take Wood. We Craft Axe.
+We Craft Axe. We Walk Forest. We Chop Wood.
+We Hunt Deer. We Take Deer Meat. We Walk Camp. We Cook Meat. We Eat Cooked Meat.
+We See Fire. We Cook Meat.
+They Is Thirsty. They Walk River. They Drink Water.
+They Are Thirsty. They Walk River. They Drink Water.
+They Is Hungry. They Eat Cooked Meat.
+They Are Hungry. They Eat Cooked Meat.
+They Is Hungry. They Eat Apple.
+They Are Hungry. They Eat Apple.
+They Is Hurt. They Sleep.
+They Are Hurt. They Sleep.
+They Take Rock. They Take Wood. They Craft Axe.
+They Craft Axe. They Walk Forest. They Chop Wood.
+They Hunt Deer. They Take Deer Meat. They Walk Camp. They Cook Meat. They Eat Cooked Meat.
+They See Fire. They Cook Meat.
+He Is Thirsty. He Walk River. He Drink Water.
+He Is Hungry. He Eat Cooked Meat.
+He Is Hungry. He Eat Apple.
+He Is Hurt. He Sleep.
+He Take Rock. He Take Wood. He Craft Axe.
+He Craft Axe. He Walk Forest. He Chop Wood.
+He Hunt Deer. He Take Deer Meat. He Walk Camp. He Cook Meat. He Eat Cooked Meat.
+He See Fire. He Cook Meat.
+She Is Thirsty. She Walk River. She Drink Water.
+She Is Hungry. She Eat Cooked Meat.
+She Is Hungry. She Eat Apple.
+She Is Hurt. She Sleep.
+She Take Rock. She Take Wood. She Craft Axe.
+She Craft Axe. She Walk Forest. She Chop Wood.
+She Hunt Deer. She Take Deer Meat. She Walk Camp. She Cook Meat. She Eat Cooked Meat.
+She See Fire. She Cook Meat.
+It Is Thirsty. It Walk River. It Drink Water.
+It Is Hungry. It Eat Cooked Meat.
+It Is Hungry. It Eat Apple.
+It Is Hurt. It Sleep.
+It Take Rock. It Take Wood. It Craft Axe.
+It Craft Axe. It Walk Forest. It Chop Wood.
+It Hunt Deer. It Take Deer Meat. It Walk Camp. It Cook Meat. It Eat Cooked Meat.
+It See Fire. It Cook Meat.
+I Is Thirsty. I Walk River. I Drink Water.
+I Am Thirsty. I Walk River. I Drink Water.
+I Is Hungry. I Eat Cooked Meat.
+I Am Hungry. I Eat Cooked Meat.
+I Is Hungry. I Eat Apple.
+I Am Hungry. I Eat Apple.
+I Is Hurt. I Sleep.
+I Am Hurt. I Sleep.
+I Take Rock. I Take Wood. I Craft Axe.
+I Craft Axe. I Walk Forest. I Chop Wood.
+I Hunt Deer. I Take Deer Meat. I Walk Camp. I Cook Meat. I Eat Cooked Meat.
+I See Fire. I Cook Meat.
+You Is Thirsty. You Walk River. You Drink Water.
+You Are Thirsty. You Walk River. You Drink Water.
+You Is Hungry. You Eat Cooked Meat.
+You Are Hungry. You Eat Cooked Meat.
+You Is Hungry. You Eat Apple.
+You Are Hungry. You Eat Apple.
+You Is Hurt. You Sleep.
+You Are Hurt. You Sleep.
+You Take Rock. You Take Wood. You Craft Axe.
+You Craft Axe. You Walk Forest. You Chop Wood.
+You Hunt Deer. You Take Deer Meat. You Walk Camp. You Cook Meat. You Eat Cooked Meat.
+You See Fire. You Cook Meat.
+We Is Thirsty. We Walk River. We Drink Water.
+We Are Thirsty. We Walk River. We Drink Water.
+We Is Hungry. We Eat Cooked Meat.
+We Are Hungry. We Eat Cooked Meat.
+We Is Hungry. We Eat Apple.
+We Are Hungry. We Eat Apple.
+We Is Hurt. We Sleep.
+We Are Hurt. We Sleep.
+We Take Rock. We Take Wood. We Craft Axe.
+We Craft Axe. We Walk Forest. We Chop Wood.
+We Hunt Deer. We Take Deer Meat. We Walk Camp. We Cook Meat. We Eat Cooked Meat.
+We See Fire. We Cook Meat.
+They Is Thirsty. They Walk River. They Drink Water.
+They Are Thirsty. They Walk River. They Drink Water.
+They Is Hungry. They Eat Cooked Meat.
+They Are Hungry. They Eat Cooked Meat.
+They Is Hungry. They Eat Apple.
+They Are Hungry. They Eat Apple.
+They Is Hurt. They Sleep.
+They Are Hurt. They Sleep.
+They Take Rock. They Take Wood. They Craft Axe.
+They Craft Axe. They Walk Forest. They Chop Wood.
+They Hunt Deer. They Take Deer Meat. They Walk Camp. They Cook Meat. They Eat Cooked Meat.
+They See Fire. They Cook Meat.
+He Is Thirsty. He Walk River. He Drink Water.
+He Is Hungry. He Eat Cooked Meat.
+He Is Hungry. He Eat Apple.
+He Is Hurt. He Sleep.
+He Take Rock. He Take Wood. He Craft Axe.
+He Craft Axe. He Walk Forest. He Chop Wood.
+He Hunt Deer. He Take Deer Meat. He Walk Camp. He Cook Meat. He Eat Cooked Meat.
+He See Fire. He Cook Meat.
+She Is Thirsty. She Walk River. She Drink Water.
+She Is Hungry. She Eat Cooked Meat.
+She Is Hungry. She Eat Apple.
+She Is Hurt. She Sleep.
+She Take Rock. She Take Wood. She Craft Axe.
+She Craft Axe. She Walk Forest. She Chop Wood.
+She Hunt Deer. She Take Deer Meat. She Walk Camp. She Cook Meat. She Eat Cooked Meat.
+She See Fire. She Cook Meat.
+It Is Thirsty. It Walk River. It Drink Water.
+It Is Hungry. It Eat Cooked Meat.
+It Is Hungry. It Eat Apple.
+It Is Hurt. It Sleep.
+It Take Rock. It Take Wood. It Craft Axe.
+It Craft Axe. It Walk Forest. It Chop Wood.
+It Hunt Deer. It Take Deer Meat. It Walk Camp. It Cook Meat. It Eat Cooked Meat.
+It See Fire. It Cook Meat.
