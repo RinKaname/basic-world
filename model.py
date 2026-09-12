@@ -99,6 +99,10 @@ class AmadeusRNN(nn.Module):
             next_token = torch.multinomial(probs, num_samples=1)
             generated = torch.cat([generated, next_token], dim=1)
 
+            # Stop generation if EOS token (ID 2) or PAD token (ID 0) is predicted
+            if next_token.item() == 2 or next_token.item() == 0:
+                break
+
             # Incremental state update: O(H²) per token
             x_next = self.W_emb(next_token)
             x_next_norm = F.normalize(x_next, p=2, dim=-1).squeeze(1)
