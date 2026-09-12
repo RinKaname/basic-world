@@ -18,11 +18,10 @@ class BasicWorldDataset(Dataset):
 
         # Flatten all sentences into one continuous stream of words
         full_text = " ".join(lines)
-        translator = str.maketrans('', '', string.punctuation)
-        clean_text = full_text.translate(translator).lower()
 
-        self.words = clean_text.split()
-        self.tokens = [tokenizer.word2id.get(w, tokenizer.word2id["[UNK]"]) for w in self.words]
+        # We now use the tokenizer's encode method which handles [EOS] correctly
+        self.tokens = tokenizer.encode(full_text)
+        self.words = [tokenizer.id2word.get(t, "[UNK]") for t in self.tokens]
 
     def __len__(self):
         return max(0, len(self.tokens) - self.seq_len)
@@ -44,7 +43,7 @@ if __name__ == "__main__":
     DATA_PATH = "text/world_word.txt"
     H = 64            # Tiny hidden dimension
     B = 16            # Batch size
-    T = 6             # Sequence length (short basic sentences)
+    T = 16            # Increased sequence length to learn cause and effect chains
     LR = 1e-3         # Faster learning rate for tiny model
     EPOCHS = 100      # Since data is tiny, we need more epochs to memorize the grammar
 

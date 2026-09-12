@@ -220,27 +220,24 @@ def run_game(mode="player"):
                     input_tensor = torch.tensor(encoded, dtype=torch.long, device=DEVICE).unsqueeze(0)
 
                     with torch.no_grad():
-                        # Generate up to 3 words (Verb + Target Word 1 + Target Word 2) to support "Deer Meat"
-                        gen_tokens = model.generate(input_tensor, max_new_tokens=3, temperature=0.8)
+                        # Generate up to 5 words to support [EOS] and multi-word items cleanly
+                        gen_tokens = model.generate(input_tensor, max_new_tokens=5, temperature=0.8)
 
                     # Decode only the newly generated tokens
                     generated_ids = gen_tokens[0].cpu().numpy().tolist()[len(encoded):]
+
+                    # Ensure we slice off everything after [EOS] (ID 2) just in case
+                    if 2 in generated_ids:
+                        generated_ids = generated_ids[:generated_ids.index(2)]
+
                     generated_words = [tokenizer.id2word.get(tid, "") for tid in generated_ids if tid != 0]
 
                     action = f"{entity.name} " + " ".join(generated_words).title()
                     original_action_raw = action
 
                     # Clean the action text from periods and extra tokens
-                    clean_action = action.replace(".", "").strip()
+                    clean_action = action.replace(".", "").replace("[Eos]", "").replace("<Temp_Eos>", "").replace("Eos", "").strip()
                     words = clean_action.lower().split()
-
-                    # Truncate if the model predicts the start of a new sentence (e.g. "He Walk Forest He")
-                    if len(words) > 2 and words[-1] in ["he", "she", "it", "they", "we", "you", "i"]:
-                        words = words[:-1]
-
-                    # Fix hallucination like "He Walk He Stop" -> "He Walk Forest"
-                    if len(words) > 2 and words[2] in ["he", "she", "i", "stop", "see"]:
-                        words = words[:2]
 
                     clean_action = " ".join(words).title()
 
