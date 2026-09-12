@@ -294,3 +294,94 @@ It Attack.
 It Defend.
 It Hide.
 It Hurt.
+I Carry Bag.
+I Carry Apple Fruit.
+I Carry Banana Fruit.
+I Carry Grape Fruit.
+I Carry Papaya Fruit.
+I Carry Orange Fruit.
+You Carry Bag.
+You Carry Apple Fruit.
+You Carry Banana Fruit.
+You Carry Grape Fruit.
+You Carry Papaya Fruit.
+You Carry Orange Fruit.
+We Carry Bag.
+We Carry Apple Fruit.
+We Carry Banana Fruit.
+We Carry Grape Fruit.
+We Carry Papaya Fruit.
+We Carry Orange Fruit.
+They Carry Bag.
+They Carry Apple Fruit.
+They Carry Banana Fruit.
+They Carry Grape Fruit.
+They Carry Papaya Fruit.
+They Carry Orange Fruit.
+He Carry Bag.
+He Carry Apple Fruit.
+He Carry Banana Fruit.
+He Carry Grape Fruit.
+He Carry Papaya Fruit.
+He Carry Orange Fruit.
+She Carry Bag.
+She Carry Apple Fruit.
+She Carry Banana Fruit.
+She Carry Grape Fruit.
+She Carry Papaya Fruit.
+She Carry Orange Fruit.
+It Carry Bag.
+It Carry Apple Fruit.
+It Carry Banana Fruit.
+It Carry Grape Fruit.
+It Carry Papaya Fruit.
+It Carry Orange Fruit.
+My Bag.
+Your Bag.
+Our Bag.
+Their Bag.
+His Bag.
+Her Bag.
+Its Bag.
+I Walk Forest.
+I See Forest.
+I Walk River.
+I See River.
+I Walk Camp.
+I See Camp.
+You Walk Forest.
+You See Forest.
+You Walk River.
+You See River.
+You Walk Camp.
+You See Camp.
+We Walk Forest.
+We See Forest.
+We Walk River.
+We See River.
+We Walk Camp.
+We See Camp.
+They Walk Forest.
+They See Forest.
+They Walk River.
+They See River.
+They Walk Camp.
+They See Camp.
+He Walk Forest.
+He See Forest.
+He Walk River.
+He See River.
+He Walk Camp.
+He See Camp.
+She Walk Forest.
+She See Forest.
+She Walk River.
+She See River.
+She Walk Camp.
+She See Camp.
+It Walk Forest.
+It See Forest.
+It Walk River.
+It See River.
+It Walk Camp.
+It See Camp.
