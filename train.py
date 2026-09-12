@@ -105,5 +105,6 @@ if __name__ == "__main__":
     print("\n✅ Training Complete!")
 
     # Save Model
-    torch.save(model.state_dict(), "basic_world_model.pth")
-    print("💾 Model saved to basic_world_model.pth")
+    from safetensors.torch import save_file
+    save_file(model.state_dict(), "basic_world_model.safetensors")
+    print("💾 Model saved to basic_world_model.safetensors")
