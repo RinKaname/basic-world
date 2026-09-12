@@ -385,3 +385,16 @@ It Walk River.
 It See River.
 It Walk Camp.
 It See Camp.
+I Eat Deer Meat.
+You Eat Deer Meat.
+He Eat Deer Meat.
+She Eat Deer Meat.
+It Eat Deer Meat.
+We Eat Deer Meat.
+They Eat Deer Meat.
+I Eat Cow Meat.
+You Eat Cow Meat.
+He Eat Cow Meat.
+She Eat Cow Meat.
+We Eat Cow Meat.
+They Eat Cow Meat.

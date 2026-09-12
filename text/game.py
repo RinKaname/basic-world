@@ -77,6 +77,10 @@ class World:
         verb = words[1]
         target = words[2].capitalize() if len(words) > 2 else None
 
+        # Support multi-word targets (e.g. "Deer Meat" or "Apple Fruit")
+        if len(words) > 2:
+            target = " ".join(words[2:]).title()
+
         if verb == "walk" and target in self.zones:
             entity.location = target
             return f"{entity.name} Walk {target}."
@@ -105,8 +109,8 @@ class World:
 
         elif verb == "hunt" and target == "Deer":
             if entity.location == "Forest" and random.random() < 0.5:
-                entity.bag.append("Meat")
-                return f"{entity.name} Hunt Deer. Take Meat."
+                entity.bag.append("Deer Meat")
+                return f"{entity.name} Hunt Deer. Take Deer Meat."
             return "No Deer."
 
         elif verb == "sleep":
@@ -179,19 +183,30 @@ def run_game(mode="player"):
                     input_tensor = torch.tensor(encoded, dtype=torch.long, device=DEVICE).unsqueeze(0)
 
                     with torch.no_grad():
-                        # Generate 3 words (Verb + Target/Noun)
-                        gen_tokens = model.generate(input_tensor, max_new_tokens=2, temperature=0.8)
+                        # Generate up to 3 words (Verb + Target Word 1 + Target Word 2) to support "Deer Meat"
+                        gen_tokens = model.generate(input_tensor, max_new_tokens=3, temperature=0.8)
 
                     # Decode only the newly generated tokens
                     generated_ids = gen_tokens[0].cpu().numpy().tolist()[len(encoded):]
                     generated_words = [tokenizer.id2word.get(tid, "") for tid in generated_ids if tid != 0]
 
-                    action = f"{entity.name} " + " ".join(generated_words).capitalize()
+                    action = f"{entity.name} " + " ".join(generated_words).title()
+
+                    # Clean the action text from periods and extra tokens
+                    clean_action = action.replace(".", "").strip()
+                    words = clean_action.lower().split()
+
+                    # Truncate if the model predicts the start of a new sentence (e.g. "He Walk Forest He")
+                    if len(words) > 2 and words[-1] in ["he", "she", "it", "they", "we", "you", "i"]:
+                        words = words[:-1]
+
+                    clean_action = " ".join(words).title()
 
                     # Sanity check: fallback if model hallucinated un-parsable garbage
-                    words = action.lower().replace(".", "").split()
                     if len(words) < 2 or words[1] not in ["walk", "take", "eat", "drink", "hunt", "sleep"]:
-                         action = f"{entity.name} Walk {random.choice(['Forest', 'River', 'Camp'])}"
+                         clean_action = f"{entity.name} Walk {random.choice(['Forest', 'River', 'Camp'])}"
+
+                    action = clean_action
                 else:
                     # Basic Random fallback AI
                     possible_actions = [f"{entity.name} Walk Forest", f"{entity.name} Walk River", f"{entity.name} Walk Camp"]
