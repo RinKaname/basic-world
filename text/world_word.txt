@@ -398,3 +398,45 @@ He Eat Cow Meat.
 She Eat Cow Meat.
 We Eat Cow Meat.
 They Eat Cow Meat.
+I Take Rock.
+You Take Rock.
+He Take Rock.
+She Take Rock.
+We Take Rock.
+They Take Rock.
+I Take Wood.
+You Take Wood.
+He Take Wood.
+She Take Wood.
+We Take Wood.
+They Take Wood.
+I Craft Axe.
+You Craft Axe.
+He Craft Axe.
+She Craft Axe.
+We Craft Axe.
+They Craft Axe.
+I Chop Wood.
+You Chop Wood.
+He Chop Wood.
+She Chop Wood.
+We Chop Wood.
+They Chop Wood.
+I Cook Meat.
+You Cook Meat.
+He Cook Meat.
+She Cook Meat.
+We Cook Meat.
+They Cook Meat.
+I Take Cooked Meat.
+You Take Cooked Meat.
+He Take Cooked Meat.
+She Take Cooked Meat.
+We Take Cooked Meat.
+They Take Cooked Meat.
+I Eat Cooked Meat.
+You Eat Cooked Meat.
+He Eat Cooked Meat.
+She Eat Cooked Meat.
+We Eat Cooked Meat.
+They Eat Cooked Meat.

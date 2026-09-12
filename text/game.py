@@ -50,9 +50,9 @@ class Zone:
 class World:
     def __init__(self):
         self.zones = {
-            "Forest": Zone("Forest", {"Apple": 0.6, "Deer": 0.4, "Wood": 0.8}),
-            "River": Zone("River", {"Water": 1.0, "Fish": 0.3}),
-            "Camp": Zone("Camp", {"Fire": 1.0})
+            "Forest": Zone("Forest", {"Apple": 0.6, "Deer": 0.4, "Wood": 0.5}),
+            "River": Zone("River", {"Water": 1.0, "Fish": 0.3, "Rock": 0.7}),
+            "Camp": Zone("Camp", {"Fire": 1.0, "Rock": 0.4, "Wood": 0.3})
         }
         self.entities = []
 
@@ -93,10 +93,47 @@ class World:
             else:
                 return f"No {target} In {entity.location}."
 
+        elif verb == "craft" and target == "Axe":
+            if "Wood" in entity.bag and "Rock" in entity.bag:
+                entity.bag.remove("Wood")
+                entity.bag.remove("Rock")
+                entity.bag.append("Axe")
+                return f"{entity.name} Craft Axe."
+            return "No Wood Or Rock."
+
+        elif verb == "chop" and target == "Wood":
+            if entity.location == "Forest" and "Axe" in entity.bag:
+                entity.bag.append("Wood")
+                return f"{entity.name} Chop Wood."
+            return "No Axe Or Not In Forest."
+
+        elif verb == "cook" and target == "Meat":
+            if entity.location == "Camp":
+                # Can cook either generic meat or specific deer/cow meat
+                meat_types = ["Meat", "Deer Meat", "Cow Meat"]
+                has_meat = any(m in entity.bag for m in meat_types)
+                if has_meat and "Wood" in entity.bag:
+                    # Remove the first meat found
+                    for m in meat_types:
+                        if m in entity.bag:
+                            entity.bag.remove(m)
+                            break
+                    entity.bag.remove("Wood")
+                    entity.bag.append("Cooked Meat")
+                    return f"{entity.name} Cook Meat."
+                return "No Meat Or Wood."
+            return "Not At Camp."
+
         elif verb == "eat" and target:
             if target in entity.bag:
                 entity.bag.remove(target)
-                entity.hunger = max(0, entity.hunger - 40)
+                # Differentiate raw vs cooked meat nutrition
+                if target in ["Meat", "Deer Meat", "Cow Meat"]:
+                    entity.hunger = max(0, entity.hunger - 20)  # Raw meat restores less
+                elif target == "Cooked Meat":
+                    entity.hunger = max(0, entity.hunger - 60)  # Cooked meat restores a lot
+                else:
+                    entity.hunger = max(0, entity.hunger - 40)  # Fruits
                 return f"{entity.name} Eat {target}."
             else:
                 return f"No {target} In Bag."
@@ -191,6 +228,7 @@ def run_game(mode="player"):
                     generated_words = [tokenizer.id2word.get(tid, "") for tid in generated_ids if tid != 0]
 
                     action = f"{entity.name} " + " ".join(generated_words).title()
+                    original_action_raw = action
 
                     # Clean the action text from periods and extra tokens
                     clean_action = action.replace(".", "").strip()
@@ -200,13 +238,27 @@ def run_game(mode="player"):
                     if len(words) > 2 and words[-1] in ["he", "she", "it", "they", "we", "you", "i"]:
                         words = words[:-1]
 
+                    # Fix hallucination like "He Walk He Stop" -> "He Walk Forest"
+                    if len(words) > 2 and words[2] in ["he", "she", "i", "stop", "see"]:
+                        words = words[:2]
+
                     clean_action = " ".join(words).title()
 
+                    fallback_triggered = False
                     # Sanity check: fallback if model hallucinated un-parsable garbage
-                    if len(words) < 2 or words[1] not in ["walk", "take", "eat", "drink", "hunt", "sleep"]:
+                    if len(words) < 2 or words[1] not in ["walk", "take", "eat", "drink", "hunt", "sleep", "craft", "chop", "cook"]:
+                         fallback_triggered = True
+                         clean_action = f"{entity.name} Walk {random.choice(['Forest', 'River', 'Camp'])}"
+
+                    # Secondary fallback if the target is missing (e.g. just "He Walk")
+                    elif len(words) == 2 and words[1] == "walk":
+                         fallback_triggered = True
                          clean_action = f"{entity.name} Walk {random.choice(['Forest', 'River', 'Camp'])}"
 
                     action = clean_action
+
+                    if fallback_triggered:
+                        print(f"[SLM Hallucination] Original output: '{original_action_raw}'. Overriding with fallback.")
                 else:
                     # Basic Random fallback AI
                     possible_actions = [f"{entity.name} Walk Forest", f"{entity.name} Walk River", f"{entity.name} Walk Camp"]
