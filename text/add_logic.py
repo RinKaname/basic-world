@@ -3,16 +3,24 @@ def append_logic():
     subjects = ["I", "You", "We", "They", "He", "She", "It"]
 
     for s in subjects:
-        # Survival Logic
-        sentences.append(f"{s} Is Thirsty. {s} Walk River. {s} Drink Water.")
-        sentences.append(f"{s} Am Thirsty. {s} Walk River. {s} Drink Water." if s == "I" else f"{s} Are Thirsty. {s} Walk River. {s} Drink Water." if s in ["You", "We", "They"] else "")
+        # State-Aware Survival Logic (Thirst)
+        # 1. Not at river -> Walk River
+        sentences.append(f"{s} See Forest. {s} Is Thirsty. {s} Walk River.")
+        sentences.append(f"{s} See Forest. {s} Am Thirsty. {s} Walk River." if s == "I" else f"{s} See Forest. {s} Are Thirsty. {s} Walk River." if s in ["You", "We", "They"] else "")
+        sentences.append(f"{s} See Camp. {s} Is Thirsty. {s} Walk River.")
+        sentences.append(f"{s} See Camp. {s} Am Thirsty. {s} Walk River." if s == "I" else f"{s} See Camp. {s} Are Thirsty. {s} Walk River." if s in ["You", "We", "They"] else "")
 
+        # 2. Already at river -> Drink Water
+        sentences.append(f"{s} See River. {s} Is Thirsty. {s} Drink Water.")
+        sentences.append(f"{s} See River. {s} Am Thirsty. {s} Drink Water." if s == "I" else f"{s} See River. {s} Are Thirsty. {s} Drink Water." if s in ["You", "We", "They"] else "")
+
+        # State-Aware Survival Logic (Hunger)
         sentences.append(f"{s} Is Hungry. {s} Eat Cooked Meat.")
         sentences.append(f"{s} Am Hungry. {s} Eat Cooked Meat." if s == "I" else f"{s} Are Hungry. {s} Eat Cooked Meat." if s in ["You", "We", "They"] else "")
-
         sentences.append(f"{s} Is Hungry. {s} Eat Apple.")
         sentences.append(f"{s} Am Hungry. {s} Eat Apple." if s == "I" else f"{s} Are Hungry. {s} Eat Apple." if s in ["You", "We", "They"] else "")
 
+        # Hurt Logic
         sentences.append(f"{s} Is Hurt. {s} Sleep.")
         sentences.append(f"{s} Am Hurt. {s} Sleep." if s == "I" else f"{s} Are Hurt. {s} Sleep." if s in ["You", "We", "They"] else "")
 
